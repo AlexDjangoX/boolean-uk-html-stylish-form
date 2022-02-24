@@ -7,12 +7,95 @@ body {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+h1 {
+  font-size: 2.5rem;
+
+  display: grid;
+  place-items: center;
+}
+
 .center-wrapper {
   max-width: 35rem;
   padding: 0 1rem;
   margin: 0 auto;
 }
 
+.center {
+  padding: 2rem 4rem;
+  margin: 0 auto;
+}
+
 .stack > * + * {
   margin-top: 2rem;
+}
+
+.grid-auto-rows {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  font-size: 1.5rem;
+  width: 100%;
+  padding: 0.5rem 2rem;
+  margin: 0.5rem 0;
+  display: inline-block;
+  border-bottom: 1px solid rgb(114, 112, 112);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background: linear-gradient(to left, #ad33ff 0%, #99b9ff 100%);
+  color: white;
+  padding: 14px 20px;
+
+  border: none;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+  padding: 1rem 2rem;
+}
+
+.email label {
+  margin-top: 1rem;
+}
+
+option[value="Under $750"],
+option[value="Weekend special"] {
+  background-color: #92fc98;
+}
+
+option[value="Midrange under $1000"],
+option[value="Weekday break"] {
+  background-color: rgb(255, 228, 192);
+}
+
+option[value="Dulux under $5000"],
+option[value="Full Vacation"] {
+  background-color: #a33737;
+}
+
+.placeholder-services {
+  font-size: 1.5rem;
+}
+.text-area,
+.text-area label {
+  padding: 2rem 0;
+}
+
+textarea {
+  font-family: inherit;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: #818181;
 }

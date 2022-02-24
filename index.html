@@ -11,51 +11,62 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap"
       rel="stylesheet"
     />
-    <title>Full Stack Portfolio</title>
+    <script src="https://use.fontawesome.com/288c439416.js"></script>
+    <script src="https://use.fontawesome.com/a5954dadd5.js"></script>
+    <title>Say Hello</title>
   </head>
   <body>
     <header></header>
 
-    <main>
-      <form action="submit" class="center-wrapper stack">
-        <h1>Say Hello !!</h1>
-        <div class="name">
+    <main class="center-wrapper stack">
+      <h1>Say Hello !!</h1>
+
+      <form action="./welcome.html">
+        <div class="name grid-auto-rows">
           <label for="name">Your Name</label>
           <input placeholder="Enter your name" type="text" name="" id="name" />
         </div>
 
-        <div class="email">
-          <label placeholder="Enter your Email address" for="email"
-            >Your Email</label
-          >
+        <div class="email grid-auto-rows">
+          <label for="email">Your Email</label>
           <input
+            placeholder="Enter your email"
             type="email"
             id="email"
-            pattern=".+@globex\.com"
             size="30"
             required
           />
         </div>
+
         <h2>Services</h2>
         <div class="services">
-          <label for="services"></label>
+          <label for="services">Needed Service</label>
           <select name="services" id="services">
-            <option value="">Choose Service</option>
+            <option class="placeholder-services" value="">
+              Choose Service
+            </option>
             <option value="Full Vacation">Vacation</option>
             <option value="Weekend special">Weekend Break</option>
             <option value="Weekday break">weekday Break</option>
           </select>
         </div>
         <div class="budget">
-          <label for="Budget"></label>
+          <label for="Budget">Budget</label>
           <select name="services" id="budget">
-            <option value="">Your Budget</option>
+            <option class="placeholderservices" value="">Your Budget</option>
             <option value="Under $750">Under $750</option>
             <option value="Midrange under $1000">Under $1000</option>
             <option value="Dulux under $5000">Under $5000</option>
           </select>
         </div>
-        <button id="submit">Submit Booking</button>
+
+        <div class="grid-auto-rows text-area">
+          <label for="text">Message</label>
+          <textarea name="" id="text" cols="10" rows="4">
+Your message here</textarea
+          >
+        </div>
+        <input type="submit" value="Submit" />
       </form>
     </main>
 
