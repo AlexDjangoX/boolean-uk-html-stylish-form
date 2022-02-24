@@ -4,10 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcom</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: sans-serif;
+        background-color: #fff1ff;
+      }
+
+      main {
+        display: grid;
+
+        place-items: center;
+      }
+
+      h1 {
+        font-size: 3rem;
+        color: #aa40bd;
+      }
+
+      a {
+        color: #8d19ad;
+        font-size: 2em;
+        transition: all 0.3s ease-out;
+      }
+      a:link {
+        font-size: 2rem;
+        text-decoration: none;
+        color: #8d19ad;
+      }
+
+      a:hover {
+        transform: translate(0, -5px);
+      }
+    </style>
+    <title>Welcome</title>
   </head>
   <body>
-    <h1>Welcome</h1>
-    <a href="./index.html">Back to Say Hello form</a>
+    <main>
+      <h1>Welcome</h1>
+      <a href="./index.html">Back to Say Hello form</a>
+    </main>
   </body>
 </html>

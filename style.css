@@ -7,6 +7,15 @@ body {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+main {
+  min-height: 45vh;
+
+  background-color: rgb(247, 247, 247);
+
+  border-radius: 1rem;
+  padding: 2rem 3rem;
+}
+
 h1 {
   font-size: 2.5rem;
 
@@ -64,6 +73,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
   padding: 1rem 2rem;
+  margin-bottom: 2rem;
 }
 
 .email label {
@@ -72,17 +82,17 @@ input[type="submit"]:hover {
 
 option[value="Under $750"],
 option[value="Weekend special"] {
-  background-color: #92fc98;
+  background-color: #af8eb5;
 }
 
 option[value="Midrange under $1000"],
 option[value="Weekday break"] {
-  background-color: rgb(255, 228, 192);
+  background-color: #e1bee7;
 }
 
 option[value="Dulux under $5000"],
 option[value="Full Vacation"] {
-  background-color: #a33737;
+  background-color: #fff1ff;
 }
 
 .placeholder-services {
